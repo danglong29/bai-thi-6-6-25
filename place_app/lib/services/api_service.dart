@@ -3,9 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/place.dart';
 
 class ApiService {
-
-static const String baseUrl = 'http://localhost:8080/api/place/getAllPlace';
-
+static const String baseUrl = 'http://192.168.16.102:8080/api/place';
 
   static Future<List<Place>> getAllPlace() async {
     final response = await http.get(Uri.parse('$baseUrl/getAllPlace'));
